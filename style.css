@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  #repos-for-user {
+    text-align: center;
+  }
+  #repo-list {
+    list-style-type: none;
+  }
+  .each-repo-result {
+    border: 2px grey solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .repo-name {
+    margin: 5px 0px 5px 0px;
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section id="input-area">
+      <h1>10.6 Requests with Auth Headers, Query Parameters, and Error Handling Checkpoint</h1>
+      <ul class="input-ul">Instructions:
+        <li>Review GitHub's API documentation for the list user repositories endpoint to understand how this endpoint works.</li>
+        <li>Create an app and push it to GitHub.</li>
+        <li>When you're done, submit the link to your GitHub repo at the bottom of the page.
+      </ul>
+      <ul class="input-ul">Requirements:
+        <li>The user must be able to search for a GitHub user handle.</li>
+        <li>The search must trigger a call to GitHub's API.</li>
+        <li>The repos associated with that handle must be displayed on the page.</li>
+        <li>You must display the repo name and link to the repo URL.</li>   
+        <li>The user must be able to make multiple searches and see only the results for the current search.</li>
+      </ul>
+
+      <form id="search-form">
+        <label for="github-handle">Github Handle</label>
+        <input id="search-input" type="text" name="handle" id="handle" required>
+        <input type="submit" value="Get Repositories">
+      </form>
+    </section>
+
+    <section id="repositories" class="hidden">
+      <h2 id="repos-for-user"></h2>
+      <ul id="repo-list">
+      </ul>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
